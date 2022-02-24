@@ -45,7 +45,7 @@ public class ArregloEstudiantes
     public Estudiante regresarObjetoEstudiante() //El metodo retornara objeto de tipo estudiantes y el listado se mostrar en main
     {
         ++pos;
-        if(pos<cantReal)
+        if(pos<=cantReal)
         {
             return vecEstudiantes[pos]; //retorna el obj en esa posicion
         }else

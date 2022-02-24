@@ -30,10 +30,10 @@ public class EstudiantesEnPOO
         
         //Ingresar varios estudiantes por medio de un while
         lector.nextLine(); //limpiar buffer y poder ver enl Nombre
-        System.out.println("Ingrese datos de estudiante:");
+        System.out.println("Ingrese datos de estudiante: (/* en nombre para terminar)");
         
         //Crear arrego de extudiantes
-            System.out.print("Nombre:                 ");
+        System.out.print("Nombre:                 ");
         aNom=lector.nextLine();
         while(!aNom.equals("/*")) //En Java no seria -> aNom != "/*"
         {
@@ -52,6 +52,7 @@ public class EstudiantesEnPOO
             System.out.print("\nNombre:                 ");
             aNom=lector.nextLine();
         }
+        System.out.println();
         
         //Montrar un listado
         unEstudiante = vectorDeEstudiante.regresarObjetoEstudiante(); //inicializa un estudiante
